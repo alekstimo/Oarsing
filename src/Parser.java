@@ -48,7 +48,7 @@ public class Parser {
         result = evalExp3();
         while ((op = token.charAt(0)) == '+' || op == '-') {
             getToken();
-            partialResult = evalExp5();
+            partialResult = evalExp3();
             switch (op) {
                 case '-':
                     result -= partialResult;
